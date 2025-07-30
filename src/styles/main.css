@@ -1,8 +1,12 @@
 * {
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    border: none;
+    /*appearance: none;*/
+    outline: none;
 }
 
 body {
@@ -15,12 +19,61 @@ body {
 }
 
 .container {
-    width: 550px;
-    min-height: 100vh;
-    background-color: #f3f3f3;
-    padding: 42px 0;
+    max-width: 550px;
+    height: 852px;
+    background-color: #1C1D21;
+    padding: 42px 21px;
 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*MAIN*/
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.converter-from,
+.converter-in {
+    width: 394px;
+    height: 142px;
+    background-color: #222327;
+    padding: 16px;
+}
+
+.converter-select {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #A0FFD4;
+    background: none;
+}
+
+.converter-title {
+    font-size: 46px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.converter-description {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: lighter;
 }
