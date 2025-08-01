@@ -11,7 +11,7 @@
 
 body {
     height: 100vh;
-    background-color: #fff;
+    background-color: #575656;
 
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
     max-width: 550px;
     height: 852px;
     background-color: #1C1D21;
-    padding: 42px 21px;
+    padding: 28px 21px;
 
     display: flex;
     flex-direction: column;
@@ -42,12 +42,47 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+    padding: 28px 0 0 0;
 }
 
+
+/*CONVERTER*/
 .converter {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 2px;
+}
+
+.converter-btn {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 24px;
+    background-color: #A0FFD4; /* #ccccff */
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1;
+    padding: 0;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.converter-btn:hover {
+    background-color: #C3FFE4;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .converter-from,
