@@ -8,43 +8,7 @@
     <title>Currency Converter</title>
   </head>
   <body>
-    <div id="app">
-
-      <div class="container">
-
-        <header class="header">
-            <h1 class="header-title">Converter</h1>
-        </header>
-
-        <main class="main">
-
-          <div class="converter">
-            <div class="converter-from">
-              <select class="converter-select" name="USD">
-                <option value="USD">USD</option>
-                <option value="RUB">RUB</option>
-              </select>
-              <h1 class="converter-title">98</h1>
-              <p class="converter-description">1 Доллар США = 81,35 Российский рубль</p>
-            </div>
-
-            <button class="converter-btn">&#x21C5;</button>
-
-            <div class="converter-in">
-              <select class="converter-select" name="RUB">
-                <option value="RUB">RUB</option>
-                <option value="USD">USD</option>
-              </select>
-              <h1 class="converter-title">7796.1668</h1>
-              <p class="converter-description">81,35 Российский рубль = 1 Доллар США</p>
-            </div>
-          </div>
-
-        </main>
-
-      </div>
-
-    </div>
-    <script src="/src/app.ts"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
