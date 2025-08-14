@@ -19,8 +19,7 @@ body {
 }
 
 .container {
-    max-width: 550px;
-    height: 852px;
+    max-width: 800px;
     background-color: #1C1D21;
     padding: 28px 21px;
 
@@ -51,26 +50,16 @@ body {
     position: relative;
 
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    /*flex-direction: column;*/
+    gap: 8px;
 }
 
 .converter-btn {
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-
     width: 44px;
     height: 44px;
     border-radius: 24px;
     background-color: #A0FFD4; /* #ccccff */
     font-size: 24px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     line-height: 1;
     padding: 0;
@@ -82,7 +71,6 @@ body {
 
 .converter-btn:hover {
     background-color: #C3FFE4;
-    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .converter-from,
@@ -97,7 +85,7 @@ body {
     font-size: 14px;
     font-weight: lighter;
     color: #A0FFD4;
-    background: none;
+    background: #222327;
 }
 
 .converter-title {
