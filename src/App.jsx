@@ -1,12 +1,12 @@
-import Header from "./components/header/Header.tsx";
-import Converter from "./components/converter/Converter.jsx";
+import Header from "./components/header/Header.jsx";
+import CurrencyConverter from "./components/converter/CurrencyConverter.jsx";
 
 function App() {
     return (
         <div className="app">
             <div className="container">
                 <Header />
-                <Converter />
+                <CurrencyConverter />
             </div>
         </div>
     );
